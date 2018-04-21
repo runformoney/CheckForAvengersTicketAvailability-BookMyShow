@@ -29,10 +29,9 @@ def sendMessageToMobile(text,number):
     #print("Going into Sleep for Response.")
 
 
-#username = input("Enter Username: ")
-username = '8884300686'
-#password = passwordbox("Enter Password: ")
-password = 'Rukhshan'
+username = input("Enter Username: ")
+password = passwordbox("Enter Password: ")
+
 
 checkForLogin = checkConnectionToWay2SMS()
 numberOfRuns = 1
@@ -60,8 +59,7 @@ if checkForLogin == True:
 
         for mall in malls:
             if mall in text:
-                sendMessageToMobile("Avengers Ticket Available at " + mall + ". Hurry!",'8884300686')
-                sendMessageToMobile("Satish, Avengers ticket asigala.", '9538005833')
+                sendMessageToMobile("Avengers Ticket Available at " + mall + ". Hurry!",<Enter the Number you want to send Message to!>)
                 print("Ticket Available in: ", mall)
                 ticketNotAvailable = False
                 time.sleep(300)

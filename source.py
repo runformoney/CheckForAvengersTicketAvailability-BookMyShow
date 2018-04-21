@@ -13,6 +13,7 @@ bms = "https://in.bookmyshow.com/buytickets/avengers-infinity-war-3d-hyderabad/m
 #You can enter the names of the halls present in your city. You can get the names of the halls, by going through BookMyShow
 malls = ['PVR ICON: Hitech, Madhapur, Hyderabad', 'Prasads: Hyderabad','Asian M Cube Mall: Attapur']
 
+sendingNumber = ''
 def checkConnectionToWay2SMS():
     queue = way2sms.sms(username, password)
     if queue.loggedIn == True:
@@ -39,6 +40,7 @@ password = passwordbox("Enter Password: ")
 checkForLogin = checkConnectionToWay2SMS()
 numberOfRuns = 1
 if checkForLogin == True:
+    sendingNumber = input('Input the number in which you wish to send an alert: ')
     ticketNotAvailable = True
     while ticketNotAvailable:
         print("Running Script Iteration: ", numberOfRuns)
@@ -62,7 +64,7 @@ if checkForLogin == True:
 
         for mall in malls:
             if mall in text:
-                sendMessageToMobile("Avengers Ticket Available at " + mall + ". Hurry!",<Enter the Number you want to send Message to!>)
+                sendMessageToMobile("Avengers Ticket Available at " + mall + ". Hurry!",sendingNumber)
                 print("Ticket Available in: ", mall)
                 ticketNotAvailable = False
                 time.sleep(300)

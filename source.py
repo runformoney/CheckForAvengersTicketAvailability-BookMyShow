@@ -5,9 +5,12 @@ import way2sms
 from easygui import passwordbox
 
 
-#bms = "https://in.bookmyshow.com/hyderabad/movies/nowshowing"
+
+#The bms varialbe should have the link for for the movie in BookMyShow.
 bms = "https://in.bookmyshow.com/buytickets/avengers-infinity-war-3d-hyderabad/movie-hyd-ET00073463-MT/20180428"
 #malls = ['PVR ICON: Hitech, Madhapur, Hyderabad', 'Prasads: Hyderabad','Asian M Cube Mall: Attapur','Mukta A2 Cinemas: Abids']
+
+#You can enter the names of the halls present in your city. You can get the names of the halls, by going through BookMyShow
 malls = ['PVR ICON: Hitech, Madhapur, Hyderabad', 'Prasads: Hyderabad','Asian M Cube Mall: Attapur']
 
 def checkConnectionToWay2SMS():

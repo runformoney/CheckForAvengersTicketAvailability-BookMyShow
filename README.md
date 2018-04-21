@@ -1,5 +1,5 @@
-# CheckForAvengersTicketAvailability-BookMyShow
-This script, build using Python looks if movie tickets for Avenger Infinity war is available or not, if available it sends you a text message. 
+# Check for Avengers movie ticket availability in BookMyShow
+This script, build using Python looks if movie tickets for Avenger Infinity war is available in BookMyShow, if not available it keep checking the site for updates and sends you a text message as soon as the ticket is available. 
 
 # Prerequisites:
 1. Have an active account in Way2SMS.com

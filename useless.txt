@@ -1,1 +1,3 @@
 this text is useless
+
+but this it served it purpose of telling the awesome students of Edvancer about git related stuff
